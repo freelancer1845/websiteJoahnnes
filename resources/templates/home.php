@@ -1,5 +1,6 @@
 <!-- Homepage content -->
-<h2>Home Page</h2>
+
+<h1>Lorem Ipsum</h1>
 
 <?php
 

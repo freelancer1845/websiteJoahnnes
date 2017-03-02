@@ -15,7 +15,11 @@ function renderLayoutWithContentFile($contentFile, $variables = array()) {
 	
 	require_once (TEMPLATES_PATH . "/header.php");
 	
-	echo "<div id=\"container\">\n" . "\t<div id=\"content\">\n";
+	echo "<div class=\"row\">\n";
+	
+	echo "\t<div class=\"col-12 col-12-m\">\n";
+	
+	echo "\t\t<div id=\"content\">\n";
 	
 	if (file_exists ( $contentFileFullPath )) {
 		require_once ($contentFileFullPath);
@@ -28,10 +32,23 @@ function renderLayoutWithContentFile($contentFile, $variables = array()) {
 	}
 	
 	// close content div
+	echo "\t\t</div>\n";
+	
+	// close col content div
 	echo "\t</div>\n";
 	
-	// close container div
-	echo "</div>\n";
+	// For use of sidebar
+	// echo "\t<div class=\"col-3 col-3-m\">\n";
+	
+	// echo "\t\t<div id=\"sidebar\">\n";
+	
+	// require_once (TEMPLATES_PATH . "/sidebar.php");
+	
+	// // close sidebar div
+	// echo "\t\t</div>\n";
+	
+	// // close col sidebar div
+	// echo "\t</div>\n";
 	
 	require_once (TEMPLATES_PATH . "/footer.php");
 }
