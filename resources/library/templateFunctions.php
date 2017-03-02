@@ -15,6 +15,8 @@ function renderLayoutWithContentFile($contentFile, $variables = array()) {
 	
 	require_once (TEMPLATES_PATH . "/header.php");
 	
+	require_once (TEMPLATES_PATH . "/gallery.php");
+	
 	echo "<div class=\"row\">\n";
 	
 	echo "\t<div class=\"col-12 col-12-m\">\n";

@@ -17,7 +17,9 @@
 	<div id="header-logo-row" class="row">
 		<div class="col-12 col-m-12">
 			<div id="header-logo">
-				<h1 id="header-logo-name">Zahnarzt Dr. Johannes Riedel</h1>
+				<h1 id="header-logo-name">Dr. Johannes Riedel</h1>
+				<h3 id="header-logo-job">Zahnarzt</h3>
+				<h2 id="header-logo-sub">Praxis f&uuml;r Zahnheilkunde</h2>
 				<a href="tel:+4962288008">06228/8008</a>
 			</div>
 		</div>

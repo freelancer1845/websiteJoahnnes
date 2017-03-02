@@ -19,6 +19,7 @@ html {
 	border-left: 2px solid #3d3d3d;
 	border-right: 2px solid #3d3d3d;
 	z-index: 1;
+	border-right: 2px solid #3d3d3d;
 }
 
 .nav-global li {
@@ -44,23 +45,94 @@ html {
 /* Header logo */
 #header-logo {
 	padding: 20px;
+	padding-bottom: 10px;
 	background-color: #efefef;
 	box-shadow: 0px 0px 8px 3px #afafaf;
 	border-bottom: 1px solid #bababa;
 	border-top: 1px solid #bababa;
 	z-index: 3;
 	position: relative;
+	background-color: #efefef;
 }
 
 #header-logo h1 {
-	font-size: 15pt;
+	font-family: "Times New Roman", serif;
+	letter-spacing: 10px;
+	position: relative;
+	font-size: 28pt;
 	color: #20729b;
-	padding-bottom: 10px
+	color: #4b4b4b;
+	text-align: center;
+	width: 100%;
+	text-align: center;
+}
+
+#header-logo h3 {
+	font-family: "Times New Roman", serif;
+	letter-spacing: 7px;
+	position: relative;
+	font-size: 20pt;
+	color: #20729b;
+	color: #4b4b4b;
+	text-align: center;
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+#header-logo h2 {
+	font-family: "Times New Roman", serif;
+	font-size: 18pt;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	color: #021900;
+	border-bottom: 18px solid #680506;
 }
 
 #header-logo a {
 	text-decoration: none;
 	color: #20729b;
+	width: 100%;
+	Display: block;
+	text-align: center;
+	font-size: 15pt;
+}
+
+/* Gallery */
+/* @formatter:off */
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+/* @formatter:on */)
+
+div#slider {
+	overflow: hidden;
+	box-shadow: 0px 0px 8px #afafaf;
+	position: relative;	
+	padding: 20px;
+	height: 10px;
+}
+
+div#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+div#slider figure {
+	position: relative;
+	width: 500%;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slidy infinite;
 }
 
 /* Content */
@@ -118,6 +190,7 @@ html {
 }
 
 .opening-hours-table table {
+	
 }
 
 .opening-hours-table td {
@@ -139,7 +212,6 @@ html {
 	font-size: 7pt;
 	text-align: center;
 	color: #a0a0a0;
-	
 }
 
 /* Acts on all html tags. Padding and border are include in total width */
@@ -167,10 +239,12 @@ html {
 	.nav-global ul {
 		border-bottom: 1px solid #6b6b6b;
 		width: 100%;
+		padding-left: 10%;
 	}
 	.nav-global li {
 		float: left;
 		border-bottom: 0;
+		padding-right: 5%;
 	}
 	.nav-global a {
 		text-align: center;
