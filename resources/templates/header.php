@@ -13,26 +13,17 @@
 
 <body>
 
-
-	<div id="header-logo-row" class="row">
-		<div class="col-12 col-m-12">
-			<div id="header-logo">
-				<h1 id="header-logo-name">Dr. Johannes Riedel</h1>
-				<h3 id="header-logo-job">Zahnarzt</h3>
-				<h2 id="header-logo-sub">Praxis f&uuml;r Zahnheilkunde</h2>
-				<a href="tel:+4962288008">06228/8008</a>
-			</div>
+	<div id="header-row" class="row">
+		<div id="header-logo" class="col-7 col-m-12">
+			<img src="/WebsiteJohannes/public_html/img/layout/logo.png"
+				alt="Dr. Johannes Riedel">
 		</div>
-	</div>
-	<div id="nav-global" class="row">
-		<div class="col-12 col-m-12">
-			<div class="nav-global">
-				<ul>
-					<li><a class="active" href="#">Home</a></li>
-					<li><a href="#">Anfahrt</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Kontakt</a></li>
-				</ul>
-			</div>
+		<div class="col-5 col-m-12" id="nav-global">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Anfahrt</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
 		</div>
 	</div>

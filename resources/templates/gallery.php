@@ -62,8 +62,7 @@ class slideshow {
 }
 ?>
 <div class="row">
-	<div class="col-12 col-m-12">
-		<div id="slider">
+	<div id="slider" class="col-12 col-m-12">
 			<figure>
 			<?php
 			slideshow::get_images ();
@@ -73,7 +72,6 @@ class slideshow {
 			echo "<img src=\"" . WEBIMGDIR . $_SESSION ['imgarr'] [0] . "\" alt>\n";
 			?>
 			</figure>
-		</div>
 	</div>
 </div>
 
