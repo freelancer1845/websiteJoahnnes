@@ -62,16 +62,34 @@ class slideshow {
 }
 ?>
 <div class="row">
-	<div id="slider" class="col-12 col-m-12">
-			<figure>
+	<div class="col-12 col-m-12">
+		<div id="slideshow">
 			<?php
 			slideshow::get_images ();
 			for($i = 0; $i < 4; ++ $i) {
+				echo "<div>\n";
 				echo "<img src=\"" . WEBIMGDIR . $_SESSION ['imgarr'] [$i] . "\" alt>\n";
+				echo "</div>\n";
 			}
+			echo "<div>\n";
 			echo "<img src=\"" . WEBIMGDIR . $_SESSION ['imgarr'] [0] . "\" alt>\n";
+			echo "</div>\n";
 			?>
-			</figure>
+			<script src="jquery-3.2.1.min.js"></script>
+			<script>
+			$( document ).ready(function() {
+				$("#slideshow > div:gt(0)").hide();
+				setInterval(function() { 
+				  $('#slideshow > div:first')
+				    .fadeOut(1000)
+				    .next()
+				    .fadeIn(1000)
+				    .end()
+				    .appendTo('#slideshow');
+				},  3000);
+			});
+			</script>
+		</div>
 	</div>
 </div>
 

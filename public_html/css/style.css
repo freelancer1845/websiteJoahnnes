@@ -60,45 +60,24 @@ html {
 
 
 /* Gallery */
-/* @formatter:off */
-@keyframes slidy {
-	0% { left: 0%; }
-	20% { left: 0%; }
-	25% { left: -100%; }
-	45% { left: -100%; }
-	50% { left: -200%; }
-	70% { left: -200%; }
-	75% { left: -300%; }
-	95% { left: -300%; }
-	100% { left: -400%; }
-}
-/* @formatter:on */)
 
 
-
-
-#slider {
-	padding: 10px;
-	overflow: hidden;
-	box-shadow: 0px 0px 8px #afafaf;
-	position: relative;	
-	padding: 20px;
-}
-#slider figure img {
-	width: 20%;
-	float: left;
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
-#slider figure {
-	position: relative;
-	width: 500%;
-	left: 0;
-	text-align: left;
-	font-size: 0;
-	animation: 20s slidy infinite;
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
 }
-
-
 
 /* Content */
 #content {
