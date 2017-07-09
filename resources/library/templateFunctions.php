@@ -13,6 +13,8 @@ function renderLayoutWithContentFile($contentFile, $variables = array()) {
 		}
 	}
 	
+	require_once (TEMPLATES_PATH . "/startup.php");
+	
 	require_once (TEMPLATES_PATH . "/header.php");
 	
 	require_once (TEMPLATES_PATH . "/gallery.php");

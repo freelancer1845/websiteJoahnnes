@@ -75,21 +75,23 @@ class slideshow {
 			echo "<img src=\"" . WEBIMGDIR . $_SESSION ['imgarr'] [0] . "\" alt>\n";
 			echo "</div>\n";
 			?>
-			<script src="jquery-3.2.1.min.js"></script>
-			<script>
-			$( document ).ready(function() {
-				$("#slideshow > div:gt(0)").hide();
-				setInterval(function() { 
-				  $('#slideshow > div:first')
-				    .fadeOut(1000)
-				    .next()
-				    .fadeIn(1000)
-				    .end()
-				    .appendTo('#slideshow');
-				},  3000);
-			});
-			</script>
 		</div>
+		
+		<script>
+				$( document ).ready(function() {
+					
+					$("#slideshow > div:gt(0)").hide();
+					setInterval(function() { 
+					  $('#slideshow > div:first')
+					    .fadeOut(1000)
+					    .next()
+					    .fadeIn(1000)
+					    .end()
+					    .appendTo('#slideshow');
+					},  3000);
+					
+				});
+			</script>
 	</div>
 </div>
 

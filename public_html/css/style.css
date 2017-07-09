@@ -65,10 +65,10 @@ html {
 #slideshow { 
     margin: 50px auto; 
     position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    width: 80%; 
+    height: 400px; 
+    padding: 5px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 #slideshow > div { 
@@ -77,6 +77,13 @@ html {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
+    overflow: hidden;
+	text-align: center;
+}
+
+#slideshow > div > img {
+	max-width: 100%;
+	max-height: auto;
 }
 
 /* Content */
@@ -107,7 +114,7 @@ html {
 /* Footer */
 #footer {
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	padding: 10px 20px 10px 20px;
 	overflow: hidden;
 	background-color: #3d3d3d;
@@ -134,7 +141,7 @@ html {
 }
 
 .opening-hours-table table {
-	
+	color: #f9f9f9;
 }
 
 .opening-hours-table td {
